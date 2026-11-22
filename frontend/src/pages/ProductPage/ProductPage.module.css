@@ -1,0 +1,154 @@
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.breadcrumb {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.breadcrumb a {
+  color: #2563eb;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.current {
+  color: #374151;
+  font-weight: 500;
+}
+
+.productLayout {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.imageSection {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.categoryBadge {
+  display: inline-block;
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: 1px solid #bfdbfe;
+  align-self: flex-start;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.stars {
+  font-size: 1.25rem;
+}
+
+.starFilled {
+  color: #f59e0b;
+}
+
+.starEmpty {
+  color: #d1d5db;
+}
+
+.ratingText {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #2563eb;
+  margin: 0;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #374151;
+  margin: 0;
+}
+
+.enquireBtn {
+  align-self: flex-start;
+  padding: 0.85rem 2rem;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  margin-top: 0.5rem;
+}
+
+.enquireBtn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.enquireBtn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .productLayout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .price {
+    font-size: 1.5rem;
+  }
+}
